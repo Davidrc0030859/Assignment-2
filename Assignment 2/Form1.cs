@@ -44,14 +44,42 @@ namespace Assignment_2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double SR1 = double.Parse(textBox9.Text);
-            double SR2 = double.Parse(textBox1.Text);
-            double SR3 = double.Parse(textBox4.Text);
-            double SR4 = double.Parse(textBox3.Text);
-            double SR5 = double.Parse(textBox7.Text);
+            try
+            {
+                double SR1 = double.Parse(textBox9.Text);
+                double SR2 = double.Parse(textBox1.Text);
+                double SR3 = double.Parse(textBox4.Text);
+                double SR4 = double.Parse(textBox3.Text);
+                double SR5 = double.Parse(textBox7.Text);
 
-            double TotalResistance = SR1 + SR2 + SR3 + SR4 + SR5;
-            MessageBox.Show("TotalResistance = " + TotalResistance.ToString("0.00") + "Ω");
+                double TotalResistance = SR1 + SR2 + SR3 + SR4 + SR5;
+                MessageBox.Show("TotalResistance = " + TotalResistance.ToString("0.00") + "Ω");
+            }
+
+            catch
+
+            {
+                MessageBox.Show("Error in inputting values.");
+            }
         }
+        private void button2_Click(object sender, EventArgs e)
+        {  
+
+
+
+
+
+
+
+
+
+
+
+        }
+         
+
     }
+
+
+
 }

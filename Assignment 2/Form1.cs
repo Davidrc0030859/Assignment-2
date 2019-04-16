@@ -62,22 +62,32 @@ namespace Assignment_2
                 MessageBox.Show("Error in inputting values.");
             }
         }
-        private void button2_Click(object sender, EventArgs e)
-        {  
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double PR1 = double.Parse(textBox2.Text);
+                double PR2 = double.Parse(textBox6.Text);
+                double PR3 = double.Parse(textBox10.Text);
+                double PR4 = double.Parse(textBox5.Text);
+                double PR5 = double.Parse(textBox8.Text);
 
+                double TotalResistance = (1.0/(1.0/PR1 +1.0/PR2 + 1.0/PR3 + 1.0/PR4 + 1.0/PR5));
+                MessageBox.Show("TotalResistance = " + TotalResistance.ToString("0.00") + "Ω");
+            }
 
+            catch
 
+            {
+                MessageBox.Show("Error in inputting values.");
+            }
+        }
 
-
-
-
-
-
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
-         
-
     }
 
 
